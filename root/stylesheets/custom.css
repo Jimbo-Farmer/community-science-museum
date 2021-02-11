@@ -1,0 +1,26 @@
+:root {
+    --blue: #26CDF0;
+    --yellow: #FFDA1D;
+    --purple: #9100E6;
+    --very-large-header: 3.125em;
+    --large-header: 2.3125em; 
+    --medium-header: 1.75em; 
+    --large-text: 1.3125em; 
+    --medium-text: 1em; 
+    --small-text: 0.75em;  
+  }
+
+@font-face {
+  font-family: "Jura";
+  src: url("../fonts/Jura-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Share Tech";
+  src: url("../fonts/ShareTech-Regular.ttf") format("truetype");
+}

@@ -1,0 +1,43 @@
+@import 'custom.css';
+
+
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-transform: uppercase;
+    color: black;
+    background-color: var(--blue);
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+}
+
+#logo {
+    float: left;
+    margin-right: -20px;
+}
+
+#title {
+    font-family: 'Share Tech', sans-serif;
+    font-size: var(--medium-header);
+    display: inline;
+    margin: 0 10px 10px 0;
+}
+
+#sub-title {
+    display: inline-block;
+    font-size: var(--medium-text);
+}
+
+#title, #sub-title {
+    position: relative;
+    top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
