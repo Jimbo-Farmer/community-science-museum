@@ -71,8 +71,10 @@ nav {
 }
 
 #home {
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
+    position: relative;
+    top: 3px;
 }
 
 .expandable {
@@ -99,5 +101,5 @@ nav {
 
 .down {
     /* rotate: 180deg; */
-    -webkit-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);  /*needed to do this otherwise didn't work on my iphone*/
 }
