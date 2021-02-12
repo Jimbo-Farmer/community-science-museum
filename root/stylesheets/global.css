@@ -83,6 +83,7 @@ nav {
     width: 50%;
     background-color: var(--blue);
     padding: 5px;
+    border-top: 1px solid black;
     margin: 0;
 }
 #events {
@@ -108,7 +109,7 @@ nav {
 article {
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 8px;
     border-bottom: 10px solid var(--yellow);
 }
 
@@ -132,4 +133,29 @@ h1 {
 
 p {
     line-height: 1.5em;
+}
+
+p span {
+    color: var(--yellow);
+}
+
+.visit-home {
+    display: flex;
+}
+
+.hours {
+    flex: 1.2;
+}
+
+.address {
+    flex: 0.8;
+}
+
+
+.address p {
+    margin: 0;
+}
+
+.last {
+    margin-bottom: 30px;   /*to ensure no text is obscured by nav bar in mobile view.*/
 }
