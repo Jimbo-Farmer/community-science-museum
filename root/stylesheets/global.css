@@ -86,13 +86,13 @@ nav {
     margin: 0;
 }
 #events {
-    bottom: 40px;
+    bottom: 42px;
 }
 #involved {
-    bottom: 70px;
+    bottom: 72px;
 }
 #contact {
-    bottom: 100px;
+    bottom: 102px;
 }
 
 #events.hidden, #involved.hidden, #contact.hidden {
