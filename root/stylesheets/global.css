@@ -98,5 +98,6 @@ nav {
 }
 
 .down {
-    rotate: 180deg;
+    /* rotate: 180deg; */
+    -webkit-transform: rotate(180deg);
 }
