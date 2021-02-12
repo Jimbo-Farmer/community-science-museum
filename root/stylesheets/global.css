@@ -41,3 +41,62 @@ header a {
     text-decoration: none;
     color: black;
 }
+
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--blue);
+    border-top: 2px solid var(--yellow);
+    width: 100%;
+    padding: 8px 0;
+}
+
+
+.permanent {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.narrow {
+    width: 15%;
+}
+
+.expand {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: var(--medium-text);
+}
+
+#home {
+    height: 16px;
+    width: 16px;
+}
+
+.expandable {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    background-color: var(--blue);
+    padding: 5px;
+    margin: 0;
+}
+#events {
+    bottom: 40px;
+}
+#involved {
+    bottom: 70px;
+}
+#contact {
+    bottom: 100px;
+}
+
+#events.hidden, #involved.hidden, #contact.hidden {
+    bottom: -150px;
+}
+
+.down {
+    rotate: 180deg;
+}
