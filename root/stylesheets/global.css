@@ -103,3 +103,33 @@ nav {
     /* rotate: 180deg; */
     -webkit-transform: rotate(180deg);  /*needed to do this otherwise didn't work on my iphone*/
 }
+
+
+article {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-bottom: 10px solid var(--yellow);
+}
+
+h2, h1 {
+    text-transform: uppercase;
+    margin-top: 0%;
+    font-size: var(--large-text);
+}
+a {
+    color: var(--blue);
+}
+
+h1 {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.welcome p:first-of-type {
+    margin-top: 0.1125em;
+}
+
+p {
+    line-height: 1.5em;
+}
