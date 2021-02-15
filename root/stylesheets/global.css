@@ -25,6 +25,7 @@ header {
     font-size: var(--medium-header);
     display: inline;
     margin: 0 10px 10px 0;
+    line-height: 1.2em;
 }
 
 #sub-title {
@@ -109,7 +110,7 @@ nav {
 article {
     background-color: black;
     color: white;
-    padding: 8px;
+    padding: 8px 16px;
     border-bottom: 10px solid var(--yellow);
 }
 
@@ -158,4 +159,23 @@ p span {
 
 .last {
     margin-bottom: 30px;   /*to ensure no text is obscured by nav bar in mobile view.*/
+}
+
+
+.featured {
+    display: flex;
+}
+
+.left-column, .right-column {
+    flex: 1;
+}
+
+.right-column {
+    text-align: right;
+}
+
+article img {
+    height: 100%;
+    /* max-height: 200px; */
+    max-width: 50vw;
 }
