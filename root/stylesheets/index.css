@@ -1,3 +1,9 @@
 #events-home p {
-    margin: 6px 0;
+    margin: 4px 0;
 }
+
+
+#welcome p:first-of-type {
+    margin-top: 0.1125em;       /*to get the h1 in line with rest of paragraph*/
+}
+

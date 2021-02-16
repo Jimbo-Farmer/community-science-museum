@@ -43,6 +43,8 @@ header a {
     color: black;
 }
 
+/* --------------------------navbar arrangement and styling------------------- */
+
 nav {
     position: fixed;
     bottom: 0;
@@ -106,6 +108,7 @@ nav {
     -webkit-transform: rotate(180deg);  /*needed to do this otherwise didn't work on my iphone*/
 }
 
+/* ------------------------------main styling-------------------------------- */
 
 article {
     background-color: black;
@@ -128,10 +131,6 @@ h1 {
     margin: 0 5px 0 0;
 }
 
-.welcome p:first-of-type {
-    margin-top: 0.1125em;       /*to get the h1 in line with rest of paragraph*/
-}
-
 p {
     line-height: 1.5em;
 }
@@ -140,27 +139,23 @@ p span {
     color: var(--yellow);
 }
 
-.visit-home {
-    display: flex;
-}
-
 .hours {
     flex: 1.2;
 }
 
 .address {
     flex: 0.8;
+    border-left: solid 1px white;
+    padding-left: 8px;    /*only really necessary on very small screen sizes (320px) */
 }
-
 
 .address p {
     margin: 0;
 }
 
 .last {
-    margin-bottom: 30px;   /*to ensure no text is obscured by nav bar in mobile view.*/
+    margin-bottom: 30px;   /*to ensure no text is obscured by fixed nav bar in mobile view.*/
 }
-
 
 .featured {
     display: flex;
@@ -179,12 +174,9 @@ p span {
     padding: 8px 0 8px 16px;
 }
 
-
-
 .left-column.image, .right-column.image {
     padding: 0;
     max-width: 50vw;
-    /* height: 200px; */
 }
 
 article img {
@@ -192,9 +184,8 @@ article img {
     height: 100%;
     max-height: 200px;
     max-width: 250px;
-    /* height: inherit; */
-    /* object-fit: fill; */
-    /* overflow: hidden; */
-    /* max-height: 200px;
-    max-width: 50vw; */
 } 
+
+.info-text {
+    padding: 8px 16px;
+}
