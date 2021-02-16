@@ -7,3 +7,18 @@
     margin-top: 0.1125em;       /*to get the h1 in line with rest of paragraph*/
 }
 
+#experiment {
+    width: 100%;
+}
+
+#kids {
+    border: none;
+}
+
+#teachers {
+    border-top: 10px solid var(--yellow);
+}
+
+#class-experiment {
+    font-size: 0;           /* fix to remove whitespace that appeared below image.  
+}
