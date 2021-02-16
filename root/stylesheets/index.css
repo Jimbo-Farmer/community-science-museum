@@ -29,4 +29,11 @@ article {
 h1 {
     float: left;
     margin: 0 5px 0 0;
+    border: none;
+    padding: 0;
+}
+
+h2 {
+    font-size: var(--large-text);
+    text-align: inherit;
 }

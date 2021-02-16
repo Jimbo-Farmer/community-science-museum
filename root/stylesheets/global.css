@@ -106,6 +106,7 @@ nav {
 
 .down {
     /* rotate: 180deg; */
+    transform: rotate(180deg);
     -webkit-transform: rotate(180deg);  /*needed to do this otherwise didn't work on my iphone*/
 }
 
@@ -126,10 +127,14 @@ h2, h1 {
 
 h1 {
     font-size: var(--large-text);
+    border-bottom: 5px solid var(--purple);       /*chose this rather than underline */  
+    padding-bottom: 5px;                    /*as I wanted a bigger gap between */
+    display: inline-block;                  /*text and line */
 }
 
 h2 {
     font-size: var(--medium-text);
+    text-align: center;
 }
 
 a {
@@ -146,6 +151,7 @@ p span {
 
 .page-header {
     background-color: black;
+    padding: 8px 16px; 
 }
 
 .hours {
@@ -197,4 +203,12 @@ article img {
 
 .info-text {
     padding: 8px 16px;
+}
+
+.pic{
+    text-align: center;
+}
+.pic img {
+    max-width: none;
+    max-height: none;
 }
