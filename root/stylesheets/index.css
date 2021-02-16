@@ -1,7 +1,6 @@
 #events-home p {
-    margin: 4px 0;
+    margin: 4px 0;              /*slightly reduce spacing between paragraphs*/
 }
-
 
 #welcome p:first-of-type {
     margin-top: 0.1125em;       /*to get the h1 in line with rest of paragraph*/
@@ -20,5 +19,14 @@
 }
 
 #class-experiment {
-    font-size: 0;           /* fix to remove whitespace that appeared below image.  
+    font-size: 0;           /* fix to remove whitespace that appeared below image.  */
+}
+
+article {
+    border-bottom: 10px solid var(--yellow);
+}
+
+h1 {
+    float: left;
+    margin: 0 5px 0 0;
 }
