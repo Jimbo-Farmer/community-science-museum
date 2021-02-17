@@ -11,16 +11,17 @@ input, textarea {
 
 .cta {
     width: auto;
-    margin: 16px auto;
+    margin: 16px auto 0 auto;
     background: linear-gradient(0deg, rgba(73,0,115,1) 0%, rgba(148,90,79,1) 70%, rgba(255,218,29,1) 100%);
     color: white;
     border: 2px solid white;
     text-transform: uppercase;
     font-weight: bold;
     padding: 4px 16px;
+    font-size: 1em;
 }
 
-a {
+#box a {
     text-decoration: unset;
     border-radius: 4px;
     display: inline-block;
@@ -48,9 +49,16 @@ a {
     top: 40vh;
     background-color: rgba(0, 0, 0, 1);
     border: 2px solid white;
+    border-radius: 4px;
+    padding: 16px;
 }
 
 #overlay:target {
     opacity: 100%;
     visibility: visible;
+}
+
+#collections:target {
+    color: var(--blue);
+    font-weight: bold;
 }
