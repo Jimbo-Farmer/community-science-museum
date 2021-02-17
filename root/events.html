@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Check out upcoming events at the Community Science Museum">
+    <title>Events - Community Science Museum</title>
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <link rel="stylesheet" href="stylesheets/events.css">
+    <link rel="stylesheet" href="stylesheets/media.css">
 </head>
 <body>
-    
+    <header>
+        <a href="index.html" id="logo"><img src="icons/logo.png" alt="Spiral-esque community science museum logo"></a>
+        <p id="title">community science museum</p>
+        <p id="sub-title">explore together</p>
+        <nav>
+            <a class="permanent narrow" href="visit.html">visit</a>
+            <a class="hidden expandable" id="events" href="events.html">events</a>
+            <a class="permanent" href="exhibitions.html">exhibitions</a>
+            <a class="hidden expandable" id="involved" href="get_involved.html">get involved</a>
+            <a class="hidden expandable" id="contact" href="contact.html">contact</a>
+            <button class="expand permanent">MORE <img class="up" src="icons/expand_arrow.png" alt="arrow to expand nav menu"></button>
+            <a class="permanent narrow" href="index.html"><img id="home" src="icons/home.png" alt="home icon"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="page-header">
+            <h1>events</h1>
+        </div>
+        
+        <article class="info-text" id="visiting-professor">
+            <h2>visiting professor of aeronautics</h2>
+            <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+            <div class="pic">
+                <img src="images/AstronautWeb.jpg" alt="An astronaut floating above the earth">
+            </div>
+            
+        </article>
+        <article class="info-text" id="night-in-museum">
+            <h2>night in the museum</h2>
+            <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+            <div class="pic">
+                <img src="images/MuseumWeb.jpg" alt="Scene showing museum interior at night">
+            </div>
+            
+        </article>
+        <article class="info-text" id="energetica">
+            <h2>energetica exhibition on loan</h2>
+            <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.
+            </p>
+            <div class="pic">
+                <img src="images/EnergyWeb.jpg" alt="Sunrise behind wind turbines and solar panels">
+            </div>
+        </article>
+        <article class="info-text last" id="get-involved">
+            <h2>get involved</h2>
+            <p>Support us with a donation, volunteer in your spare time, or perhaps you are our next intern? <a href="get_involved.html">Find out more!</a></p>
+        </article>
+       
+    </main>
 </body>
+<script src="javascript/logic.js"></script>
 </html>

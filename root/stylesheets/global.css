@@ -122,19 +122,19 @@ article {
 
 h2, h1 {
     text-transform: uppercase;
-    margin-top: 0%;
 }
 
 h1 {
     font-size: var(--large-text);
     border-bottom: 5px solid var(--purple);       /*chose this rather than underline */  
-    padding-bottom: 5px;                    /*as I wanted a bigger gap between */
+    padding-bottom: 4px;                    /*as I wanted a bigger gap between */
     display: inline-block;                  /*text and line */
 }
 
 h2 {
     font-size: var(--medium-text);
     text-align: center;
+    margin-bottom: 4px;
 }
 
 a {
@@ -143,6 +143,7 @@ a {
 
 p {
     line-height: 1.5em;
+    margin-top: 4px;
 }
 
 p span {
@@ -151,7 +152,7 @@ p span {
 
 .page-header {
     background-color: black;
-    padding: 8px 16px; 
+    padding: 4px 16px; 
 }
 
 .hours {
@@ -202,7 +203,11 @@ article img {
 } 
 
 .info-text {
-    padding: 8px 16px;
+    padding: 8px 0;
+}
+
+.info-text p {
+    padding: 0 16px;
 }
 
 .pic{
