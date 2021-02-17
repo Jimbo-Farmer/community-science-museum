@@ -1,0 +1,53 @@
+#address {
+    text-align: center;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.cta {
+    width: auto;
+    margin: 16px auto;
+    background: linear-gradient(0deg, rgba(73,0,115,1) 0%, rgba(148,90,79,1) 70%, rgba(255,218,29,1) 100%);
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px 16px;
+}
+
+a {
+    text-decoration: unset;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#overlay p {
+    width: 80vw;
+    margin: auto;
+}
+
+#box {
+    position: relative;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 1);
+    border: 2px solid white;
+}
+
+#overlay:target {
+    opacity: 100%;
+}

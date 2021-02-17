@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Come on down to the Community Science Museum, where we bring science to life in a fun and informative way for the whole family">
+    <title>Welcome - Community Science Museum</title>
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="stylesheets/media.css">
 </head>
 <body>
-    
+    <header>
+        <a href="index.html" id="logo"><img src="icons/logo.png" alt="Spiral-esque community science museum logo"></a>
+        <p id="title">community science museum</p>
+        <p id="sub-title">explore together</p>
+        <nav>
+            <a class="permanent narrow" href="visit.html">visit</a>
+            <a class="hidden expandable" id="events" href="events.html">events</a>
+            <a class="permanent" href="exhibitions.html">exhibitions</a>
+            <a class="hidden expandable" id="involved" href="get_involved.html">get involved</a>
+            <a class="hidden expandable selected" id="contact" href="contact.html">contact</a>
+            <button class="expand permanent">MORE <img class="up" src="icons/expand_arrow.png" alt="arrow to expand nav menu"></button>
+            <a class="permanent narrow" href="index.html"><img id="home" src="icons/home.png" alt="home icon"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="page-header">
+            <h1>contact</h1>
+        </div>
+        <article class="info-text">
+            <p>We'd love to hear your comments, queries and suggestions. The simplest way is to fill out the contact form below, otherwise give us a call or pop down and have a chat. </p>
+        </article>
+        <article class="info-text" id="telephone">
+            <h2>telephone</h2>
+            <table class="standard-table">
+                <tr>
+                    <td>General enquiries</td>
+                    <td>12345678</td>
+                </tr>
+                <tr>
+                    <td id="collections">Collections department</td>
+                    <td>87654321</td>
+                </tr>
+            </table>
+        </article>
+        <article class="info-text" id="address">
+            <h2>postal address</h2>
+            <p>13 Apollo Road, Curie Town 1915, Norway</p>
+        </article>
+        <article class="info-text last" id="form">
+            <h2>contact form</h2>
+            <form action="#overlay">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject">
+                <label for="message">Message</label>
+                <textarea name="message" id="" cols="35" rows="5"></textarea>
+                <input class="cta" type="submit" value="send">
+            </form>
+        </article>
+        <article id="overlay">
+            <div id="box">
+                <p>Thank you for your message.</p>
+                <p>We will endeavour to respond within three working days.</p>
+                <a class="cta" href="contact.html">Close</a>
+            </div>
+        </article>
+    </main>
+
 </body>
+<script src="javascript/logic.js"></script>
+
 </html>

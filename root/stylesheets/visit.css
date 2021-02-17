@@ -1,22 +1,5 @@
-.visit-hours {
+.standard-table {
     margin: auto;
-
-}
-
-td:first-child {
-    min-width: 150px;
-}
-
-td:nth-child(2) {
-    text-align: right;
-}
-
-td {
-    border-bottom: 1px solid var(--blue);
-}
-
-table {
-    border-collapse: collapse;
 }
 
 #map {

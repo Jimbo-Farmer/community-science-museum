@@ -39,6 +39,28 @@ h2 {
     margin-top: 4px;
 }
 
-h1, h2, table {
+h1, h2 {
     padding-left: 16px;
 }
+
+.address a, .address p {
+    padding-left: 8px;
+}
+
+.hours {
+    flex: 1.2;
+}
+
+.address {
+    flex: 0.8;
+    border-left: solid 1px white;
+}
+
+.address p {
+    margin: 0;
+}
+
+td:first-child {
+    min-width: 75px;
+}
+
