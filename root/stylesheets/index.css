@@ -3,7 +3,7 @@
 }
 
 #welcome p:first-of-type {
-    margin-top: 0.1825em;       /*to get the h1 in line with rest of paragraph*/
+    margin-top: 0.15em;       /*to get the h1 in line with rest of paragraph*/
 }
 
 #experiment {
@@ -30,11 +30,15 @@ h1 {
     float: left;
     margin: 0 5px 0 0;
     border: none;
-    padding: 0;
+    padding-bottom: 0;
 }
 
 h2 {
     font-size: var(--large-text);
     text-align: inherit;
     margin-top: 4px;
+}
+
+h1, h2, table {
+    padding-left: 16px;
 }

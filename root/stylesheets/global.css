@@ -84,10 +84,10 @@ nav {
 .expandable {
     position: absolute;
     left: 50%;
-    width: 50%;
+    width: 40%;
     background-color: var(--blue);
     padding: 5px;
-    border-top: 1px solid black;
+    border: 1px solid black;
     margin: 0;
 }
 #events {
@@ -126,9 +126,9 @@ h2, h1 {
 
 h1 {
     font-size: var(--large-text);
-    border-bottom: 5px solid var(--purple);       /*chose this rather than underline */  
-    padding-bottom: 4px;                    /*as I wanted a bigger gap between */
-    display: inline-block;                  /*text and line */
+    border-bottom: 5px solid var(--purple);     /*chose this rather than underline */  
+    padding-bottom: 4px;                        /*as I wanted a bigger gap between */
+    display: inline-block;                      /*text and line */
 }
 
 h2 {
@@ -142,8 +142,8 @@ a {
 }
 
 p {
-    line-height: 1.5em;
-    margin-top: 4px;
+    line-height: 1.5em;         /* as using condensed typography, this helps reduce density of text blocks */
+    margin: 6px 0;
 }
 
 p span {
@@ -216,4 +216,14 @@ article img {
 .pic img {
     max-width: none;
     max-height: none;
+}
+
+.selected  {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-weight: bold; 
+}
+
+.selected img {
+    border-bottom: 2px solid black;
 }
