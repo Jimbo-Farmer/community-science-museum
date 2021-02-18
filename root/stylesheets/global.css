@@ -2,7 +2,10 @@
 
 body {
     font-family: 'Roboto Condensed', Arial, sans-serif;
-    margin: 0;
+    font-size: 1em;
+    margin: 0 auto;
+    max-width: 480px;
+    background-color: black;
 }
 
 header {
@@ -52,6 +55,7 @@ nav {
     background-color: var(--blue);
     border-top: 2px solid var(--yellow);
     width: 100%;
+    max-width: 480px;
     padding: 8px 0;
 }
 

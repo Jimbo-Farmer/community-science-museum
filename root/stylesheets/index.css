@@ -68,6 +68,7 @@ h1, h2 {
 td:first-child {
     min-width: 75px;
     width: 27vw;
+    max-width: 150px;
 }
 
 .featured {
