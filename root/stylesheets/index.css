@@ -53,6 +53,7 @@ h1, h2 {
 
 .hours {
     flex: 1.2; 
+    padding-right: 16px;
 }
 
 
