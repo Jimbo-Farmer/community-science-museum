@@ -15,7 +15,7 @@
 }
 
 #teachers {
-    border-top: 10px solid var(--yellow);
+    border-top: 4px solid var(--yellow);
 }
 
 #class-experiment {
@@ -23,7 +23,7 @@
 }
 
 article {
-    border-bottom: 10px solid var(--yellow);
+    border-bottom: 4px solid var(--yellow);
 }
 
 h1 {
@@ -53,7 +53,6 @@ h1, h2 {
 
 .hours {
     flex: 1.2; 
-    padding-right: 16px;
 }
 
 
@@ -71,3 +70,7 @@ td:first-child {
     width: 27vw;
 }
 
+#welcome {
+    background-color: var(--yellow);
+    color: black;
+}

@@ -116,7 +116,7 @@ main {
 
 article {
     background-color: black;
-    border-bottom: 10px solid var(--purple);
+    border-bottom: 4px solid var(--darkblue);
 }
 
 h2, h1 {
@@ -126,7 +126,7 @@ h2, h1 {
 h1 {
     font-size: var(--large-text);
     border-bottom: 5px solid var(--purple);     /*chose this rather than underline */  
-    padding-bottom: 4px;                        /*as I wanted a bigger gap between */
+    padding-bottom: 2px;                        /*as I wanted a bigger gap between */
     display: inline-block;                      /*text and line */
 }
 
