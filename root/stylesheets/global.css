@@ -4,7 +4,6 @@ body {
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 1em;
     margin: 0 auto;
-    max-width: 480px;
     background-color: black;
 }
 
@@ -55,7 +54,6 @@ nav {
     background-color: var(--blue);
     border-top: 2px solid var(--yellow);
     width: 100%;
-    max-width: 480px;
     padding: 8px 0;
 }
 
@@ -174,7 +172,7 @@ article img {
     padding: 8px 0;
 }
 
-.info-text p, .info-text form {
+.info-text p {
     padding: 0 16px;
 }
 
@@ -218,5 +216,10 @@ table {
     margin-left: 16px;
 }
 .standard-table {
-    margin: auto;
+    margin: 16px auto;
 }
+
+.center {
+    text-align: center;
+}
+

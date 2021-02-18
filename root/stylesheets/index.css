@@ -67,12 +67,14 @@ h1, h2 {
 
 td:first-child {
     min-width: 75px;
-    width: 27vw;
+    width: 25vw;
     max-width: 150px;
 }
 
 .featured {
     display: flex;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 .left-column, .right-column {

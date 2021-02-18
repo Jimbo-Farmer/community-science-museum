@@ -3,12 +3,12 @@
     --darkblue: #05349b;
     --yellow: #FFDA1D;
     --purple: #9100E6;
-    --very-large-header: 3.125em;
-    --large-header: 2.3125em; 
-    --medium-header: 1.75em; 
-    --large-text: 1.3125em; 
-    --medium-text: 1em; 
-    --small-text: 0.75em;  
+    --very-large-header: 3.125rem;
+    --large-header: 2.3125rem; 
+    --medium-header: 1.75rem; 
+    --large-text: 1.3125rem; 
+    --medium-text: 1rem; 
+    --small-text: 0.75rem;  
   }
 
 @font-face {

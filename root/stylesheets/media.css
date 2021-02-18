@@ -1,1 +1,110 @@
 
+/* Some minor adjustments for smaller tablets, mostly increases in font size  */
+
+@media (min-width: 512px){
+    .info-text, .page-header {
+        padding: 8px 40px ;
+    }
+    body {
+        font-size: var(--large-text);
+    }
+    #title {
+        font-size: var(--large-header);
+    }
+    #sub-title, .expand, h2 {
+        font-size: var(--large-text);
+    }
+    h1 {
+        font-size: var(--medium-header);
+    }
+    .last {
+        margin-bottom: 42px;
+    }
+    #home {
+        width: 24px;
+        height: 24px;
+    }
+    .standard-table {
+        width: 55vw;
+        max-width: 350px;
+    }
+    #events {
+        bottom: 46px;
+    }
+    #involved {
+        bottom: 85px;
+    }
+    #contact {
+        bottom: 124px;
+    }
+
+}   
+
+@media (min-width: 768px){
+    #sub-title {
+        font-size: var(--medium-header);
+    }
+    #logo {
+        margin: 5px 0 0 20px;
+    }
+    #logo img {
+        width: 93px;
+    }
+    #sub-title {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+        border: 0;
+        bottom: unset;
+        background-color: unset; 
+        text-align: justify;
+        width: 90%;
+        margin: 0 auto;  
+        font-size: 0;
+    }
+
+    nav a {
+        font-size: var(--large-text);
+    }
+
+    nav:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        
+    }
+    
+    .expandable {
+        position: relative;
+        display: inline-block;
+        left: unset;
+        width: unset;
+        background-color: unset;
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+    .permanent {
+        display: inline-block;
+        width: unset;
+    }
+    #events {
+        bottom: unset;
+        width: 12%;
+    }
+    #involved {
+        bottom: unset;
+    }
+    #contact {
+        bottom: unset;
+    }
+    .expand {
+        display: none;
+    }
+    #events.hidden, #involved.hidden, #contact.hidden {
+        bottom: unset;
+    }
+
+}
