@@ -1,0 +1,10 @@
+h2 {
+    background-color: var(--yellow);
+    color: black; 
+    margin: 0;
+    padding: 12px 0 4px 0;
+}
+
+article {
+    border: unset;
+}

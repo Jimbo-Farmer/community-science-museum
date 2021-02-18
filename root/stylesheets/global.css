@@ -12,7 +12,7 @@ header {
     width: 100%;
     min-height: 100px;
     position: relative;
-    border-bottom: solid 10px var(--yellow);
+    border-bottom: solid 4px var(--yellow);
 }
 
 #logo {
@@ -29,6 +29,7 @@ header {
 }
 
 #sub-title {
+    font-family: 'Share Tech', sans-serif;
     display: inline-block;
     font-size: var(--medium-text);
 }
@@ -158,28 +159,6 @@ p span {
     margin-bottom: 30px;   /*to ensure no text is obscured by fixed nav bar in mobile view.*/
 }
 
-.featured {
-    display: flex;
-}
-
-.left-column, .right-column {
-    flex: 1;
-}
-
-.right-column {
-    text-align: right;
-    padding: 8px 16px 8px 0;
-}
-
-.left-column {
-    padding: 8px 0 8px 16px;
-}
-
-.left-column.image, .right-column.image {
-    padding: 0;
-    max-width: 50vw;
-}
-
 article img {
     width: 100%;
     height: 100%;
@@ -193,6 +172,11 @@ article img {
 
 .info-text p, .info-text form {
     padding: 0 16px;
+}
+
+.yellow {
+    background-color: var(--yellow);
+    color: black;
 }
 
 .pic{
