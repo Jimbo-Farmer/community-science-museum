@@ -68,8 +68,8 @@ h1, h2 {
 }
 
 td:first-child {
-    /* min-width: 75px; */
-    /* width: 25vw; */
+    min-width: 75px;
+    width: 25vw;
     max-width: 150px;
 }
 

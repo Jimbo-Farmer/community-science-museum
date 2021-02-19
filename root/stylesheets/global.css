@@ -200,7 +200,7 @@ article img {
 }
 
 td:first-child {
-    /* min-width: 160px; */
+    min-width: 160px;
 }
 
 td:nth-child(2) {
@@ -212,10 +212,10 @@ td {
     padding: 2px;
 }
 
-/* table {
+table {
     border-collapse: collapse;
     margin: 16px auto;
-} */
+}
 
 .center {
     text-align: center;
