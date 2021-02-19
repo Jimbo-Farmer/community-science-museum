@@ -119,8 +119,9 @@ main {
 
 article {
     background-color: black;
-    border-bottom: 4px solid var(--darkblue);
+    border-bottom: 4px solid var(--yellow);    
 }
+
 
 h2, h1 {
     text-transform: uppercase;
@@ -205,6 +206,8 @@ td:first-child {
 
 td:nth-child(2) {
     text-align: right;
+    padding-right: 8px;
+    
 }
 
 td {
