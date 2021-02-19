@@ -53,7 +53,8 @@ h1, h2 {
 }
 
 .hours {
-    flex: 1.2; 
+    flex: 1.2;
+    margin-right: 16px; 
 }
 
 
@@ -72,6 +73,7 @@ td:first-child {
     width: 25vw;
     max-width: 150px;
 }
+
 
 .featured, .visit-home {
     display: flex;
