@@ -1,5 +1,6 @@
 #events-home p {
-    margin: 4px 0;              /*slightly reduce spacing between paragraphs*/
+    margin: 0.5em 0;              /*slightly reduce spacing between paragraphs*/
+    line-height: 1.2em;
 }
 
 #welcome p:first-of-type {

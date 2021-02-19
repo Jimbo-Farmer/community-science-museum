@@ -8,6 +8,7 @@
     } 
     .featured div {
         flex: 0.8;
+        padding: 5%;
     }
     .featured .image {
         flex: 1.2;
