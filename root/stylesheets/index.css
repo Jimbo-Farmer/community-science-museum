@@ -48,7 +48,7 @@ h1, h2 {
 }
 
 .address a, .address p {
-    padding-left: 8px;
+    padding-left: 5%;
 }
 
 .hours {
@@ -59,6 +59,7 @@ h1, h2 {
 .address {
     flex: 0.8;
     border-left: solid 1px white;
+    margin-top: 16px;
 }
 
 .address p {
@@ -71,10 +72,9 @@ td:first-child {
     max-width: 150px;
 }
 
-.featured {
+.featured, .visit-home {
     display: flex;
-    max-width: 480px;
-    margin: 0 auto;
+
 }
 
 .left-column, .right-column {

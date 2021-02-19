@@ -2,8 +2,19 @@
 /* Some minor adjustments for smaller tablets, mostly increases in font size  */
 
 @media (min-width: 480px){
+    article img {
+        max-width: 350px;
+        max-height: 300px;
+    } 
+    .featured div {
+        flex: 1;
+    }
+    .featured .image {
+        flex: 2;
+    }
+
     .info-text p, .page-header {
-        padding: 8px 10% 16px 10%;
+        padding: 0 10% 12px 10%;
     }
     body {
         font-size: var(--large-text);
@@ -15,10 +26,19 @@
         font-size: var(--large-text);
     }
     h1 {
-        font-size: var(--medium-header);
+        font-size: var(--medium-header);  
+    }
+    #welcome h1 {
+        padding-left: 10%;
+    }
+    .home-header {
+        padding-left: 10%;
     }
     .last {
         margin-bottom: 42px;
+    }
+    .address a, .address p {
+        padding: 0 0 0 10%;
     }
     #home {
         width: 24px;
@@ -39,7 +59,7 @@
         min-width: 200px;
     }
     td:nth-child(2){
-        min-width: 150px;
+        min-width: 130px;
     }
     
     #contact {

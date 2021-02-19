@@ -209,6 +209,7 @@ td:nth-child(2) {
 
 td {
     border-bottom: 1px solid var(--blue);
+    padding: 2px;
 }
 
 table {
