@@ -119,7 +119,7 @@ main {
 
 article {
     background-color: black;
-    border-bottom: 4px solid var(--yellow);    
+       
 }
 
 
@@ -226,3 +226,8 @@ table {
     text-align: center;
 }
 
+.short-border {
+    margin: 16px auto 0 auto;
+    width: 80vw;
+    border-bottom: 2px solid var(--yellow);
+}
