@@ -1,9 +1,9 @@
 
 /* Some minor adjustments for smaller tablets, mostly increases in font size  */
 
-@media (min-width: 512px){
-    .info-text, .page-header {
-        padding: 8px 40px ;
+@media (min-width: 480px){
+    .info-text p, .page-header {
+        padding: 8px 10% 16px 10%;
     }
     body {
         font-size: var(--large-text);
@@ -26,22 +26,29 @@
     }
     .standard-table {
         width: 55vw;
-        max-width: 350px;
+        max-width: 380px;
     }
+    .hours td:first-child{
+        min-width: 100px;
+    }
+    .hours {
+        margin-right: 8px;
+    }
+
     td:first-child{
         min-width: 200px;
     }
     td:nth-child(2){
         min-width: 150px;
     }
-
-    #events {
+    
+    #contact {
         bottom: 46px;
     }
     #involved {
         bottom: 85px;
     }
-    #contact {
+    #events {
         bottom: 124px;
     }
 

@@ -35,8 +35,7 @@ input, textarea {
     width: 100vw;
     visibility: hidden;
     text-align: center;
-    opacity: 0%;
-    
+    opacity: 0%;  
 }
 
 #overlay p {
@@ -59,7 +58,7 @@ input, textarea {
     opacity: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     visibility: visible;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 #collections:target {
@@ -73,8 +72,10 @@ form {
     margin: auto;
 }
 
-
 article {
     border: unset;
 }
 
+td {
+    border: unset;
+}

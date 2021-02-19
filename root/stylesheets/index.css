@@ -40,7 +40,7 @@ h2 {
 }
 
 h1, h2 {
-    padding-left: 16px;
+    padding-left: 5%;
 }
 
 #exhibitions-home h2, #events-home h2, #involved-home h2 {
@@ -87,7 +87,7 @@ td:first-child {
 }
 
 .left-column {
-    padding: 8px 0 8px 16px;
+    padding: 8px 0 8px 5%;
 }
 
 .left-column.image, .right-column.image {

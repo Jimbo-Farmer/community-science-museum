@@ -92,13 +92,13 @@ nav {
     border: 1px solid black;
     margin: 0;
 }
-#events {
+#contact {
     bottom: 45px;
 }
 #involved {
     bottom: 81px;
 }
-#contact {
+#events {
     bottom: 117px;
 }
 
@@ -118,8 +118,7 @@ main {
 }
 
 article {
-    background-color: black;
-       
+    background-color: black;     
 }
 
 
@@ -155,7 +154,7 @@ p span {
 
 .page-header {
     background-color: black;
-    padding: 4px 16px; 
+    padding: 4px 5%; 
 }
 
 .last {
@@ -174,7 +173,7 @@ article img {
 }
 
 .info-text p {
-    padding: 0 16px;
+    padding: 0 5%;
 }
 
 .yellow {
@@ -206,8 +205,6 @@ td:first-child {
 
 td:nth-child(2) {
     text-align: right;
-    padding-right: 8px;
-    
 }
 
 td {
@@ -216,9 +213,6 @@ td {
 
 table {
     border-collapse: collapse;
-    margin-left: 16px;
-}
-.standard-table {
     margin: 16px auto;
 }
 
