@@ -64,7 +64,7 @@
         min-width: 100px;
     }
     .hours {
-        margin-right: 8px;
+        padding: 0 8px;
     }
 
     td:first-child{
