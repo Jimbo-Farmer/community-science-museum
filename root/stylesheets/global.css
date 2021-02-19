@@ -227,3 +227,9 @@ table {
     width: 80vw;
     border-bottom: 2px solid var(--yellow);
 }
+#visit-info-home {
+    padding: 8px 5%;
+}
+#visit-home-header, #visit-info-home p:last-child {
+    padding: 0;
+}
