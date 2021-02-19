@@ -62,6 +62,7 @@
     }
     #visit-info-home {
         padding: 8px 10%;
+        -webkit-padding: 8px 10%;
     }
     #visit-home-header, #visit-info-home p:last-child {
         padding: 0;
