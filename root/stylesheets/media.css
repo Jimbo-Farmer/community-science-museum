@@ -1,16 +1,27 @@
 
 /* Some minor adjustments for smaller tablets, mostly increases in font size  */
 
-@media (min-width: 480px){
+@media (min-width: 500px){
     article img {
-        max-width: 350px;
-        max-height: 300px;
+        max-width: 400px;
+        max-height: 350px;
     } 
     .featured div {
-        flex: 1;
+        flex: 0.8;
     }
     .featured .image {
-        flex: 2;
+        flex: 1.2;
+    }
+    .left-column.image, .right-column.image {
+        max-width: 70vw;
+    }
+    .right-column {
+        text-align: left;
+        padding-top: 5%;
+    }
+    .left-column {
+        text-align: right;
+        padding-top: 5%;
     }
 
     .info-text p, .page-header {
