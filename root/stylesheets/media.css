@@ -60,11 +60,18 @@
         width: 55vw;
         max-width: 380px;
     }
+    #visit-info-home {
+        padding: 8px 10%;
+    }
+    #visit-home-header, #visit-info-home p:last-child {
+        padding: 0;
+    }
     .hours td:first-child{
         min-width: 100px;
     }
     .hours {
         padding: 0 8px;
+        max-width: 55vw;
     }
 
     td:first-child{
@@ -72,6 +79,9 @@
     }
     td:nth-child(2){
         min-width: 130px;
+    }
+    td {
+        padding: 3px 0;
     }
     
     #contact {

@@ -214,7 +214,7 @@ td {
 
 table {
     border-collapse: collapse;
-    margin: 16px auto;
+    margin: 16px 16px 16px auto;
 }
 
 .center {
