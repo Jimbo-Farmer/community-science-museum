@@ -186,6 +186,18 @@
     #involved-home img {
         display: none;
     }
+    #kids {
+        border-bottom: 4px solid var(--yellow);
+    }
+    #teachers {
+        border-top: unset;
+    }
+    #teachers p, #welcome p, #involved-home .right-column {
+        padding: 0 5% 12px 5%;
+    }
+    #teachers h2, #welcome h1 {
+        padding-left: 5%;
+    }
 
     /* .info-text p {
         padding: 0 5% 12px 5%;
