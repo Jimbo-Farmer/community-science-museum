@@ -198,10 +198,7 @@
     #teachers h2, #welcome h1 {
         padding-left: 5%;
     }
-    table {
-        width: unset;
-        margin: auto;
-    }
+    
 
     
     /* -------------grid layout---------------------- */
@@ -228,8 +225,9 @@
         grid-template-areas: 
         'exhibitions-home events-home'
         'welcome welcome' 
-        'kids visit-info-home'
-        'kids researchers'
+        'kids kids'
+        'researchers researchers'
+        'visit-info-home visit-info-home'
         'experiment-image experiment-image'
         'teachers teachers'
         'involved-home involved-home';
