@@ -199,14 +199,16 @@
         padding-left: 5%;
     }
 
-    /* .info-text p {
-        padding: 0 5% 12px 5%;
-    } */
-
-
     
-    /* -------------grid layout homepage------------- */
+    /* -------------grid layout---------------------- */
 
+    main {
+        background-color: white;
+        display: grid;
+        grid-gap: 5px;
+    }
+
+    /* -------------grid layout homepage------------- */
     #exhibitions-home {grid-area: exhibitions-home;}
     #events-home {grid-area: events-home;}
     #involved-home {grid-area: involved-home;}
@@ -218,10 +220,7 @@
     #class-experiment {grid-area: experiment-image;}
 
 
-    main {
-        background-color: white;
-        display: grid;
-        grid-gap: 5px;
+    #home-main {
         grid-template-areas: 
         'exhibitions-home events-home'
         'welcome welcome' 
@@ -233,6 +232,38 @@
 
     }
 
+    /* -------------grid layout exhibitions------------- */
+    .page-header {grid-area: header;}
+    #ecology {grid-area: ecology;}
+    #cosmology {grid-area: cosmology;}
+    #robotics {grid-area: robotics;}
+    #evolution {grid-area: evolution;}
+    #biology {grid-area: biology;}
+    #events-link {grid-area: events-link;}
+    #reef {grid-area: reef;}
 
+    #ecology .pic {
+        display: none;
+    }
+    #reef {
+        display: unset;
+        font-size: 0;       /*removes whitespace under image*/
+    }
+    #reef img {
+        width: 100%;
+    }
+    #exhibitions-main .info-text {
+        padding-top: 0;
+    }
+    #exhibitions-main {
+        /* grid-row-gap: 0; */
+        grid-template-areas: 
+        'header header'
+        'ecology cosmology'
+        'reef reef'
+        'evolution biology'
+        'robotics events-link'
+    ;
 
+    }
 }

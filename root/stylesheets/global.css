@@ -234,3 +234,7 @@ table {
 #visit-home-header, #visit-info-home p:last-child {
     padding: 0;
 }
+
+#reef {
+    display: none;
+}
