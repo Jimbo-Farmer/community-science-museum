@@ -79,3 +79,8 @@ article {
 td {
     border: unset;
 }
+
+#contact-table {
+    width: 70%;
+    max-width: 400px;
+}

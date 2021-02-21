@@ -200,7 +200,8 @@ article img {
 }
 
 td:first-child {
-    min-width: 160px;
+    /* min-width: 160px; */
+    padding-right: 1%;
 }
 
 td:nth-child(2) {
@@ -214,8 +215,8 @@ td {
 
 table {
     border-collapse: collapse;
-    margin: 16px auto 16px auto
-    ;
+    margin: 16px auto 16px auto;
+    width: 60%;
 }
 
 .center {
@@ -224,7 +225,7 @@ table {
 
 .short-border {
     margin: 16px auto 0 auto;
-    width: 80vw;
+    width: 80%;
     border-bottom: 2px solid var(--yellow);
 }
 #visit-info-home {

@@ -1,10 +1,19 @@
+@media (max-width: 359px){       /*creates a little more space for the table on the homepage on very small screens*/
+    .hours {
+        margin-right: 2px;
+    }
+    .hours td:first-child {
+        min-width: none;
+    }
+}
+
 
 /* Some minor adjustments for smaller tablets, mostly increases in font size  */
 
 @media (min-width: 500px){
     article img {
-        max-width: 400px;
-        max-height: 350px;
+        max-width: 420px;
+        max-height: 380px;
     } 
     .featured div {
         flex: 0.8;
@@ -57,29 +66,17 @@
         height: 24px;
     }
     .standard-table {
-        width: 55vw;
+        width: 55%;
         max-width: 380px;
     }
     #visit-info-home {
         padding: 8px 10%;
     }
-    /* #visit-home-header, #visit-info-home p:last-child {
-        padding: 0;
-    } */
-    .hours td:first-child{
-        min-width: 100px;
-    }
+    
     .hours {
         padding: 0 8px;
-        max-width: 55vw;
     }
 
-    td:first-child{
-        min-width: 200px;
-    }
-    td:nth-child(2){
-        min-width: 130px;
-    }
     td {
         padding: 3px 0;
     }
@@ -97,6 +94,8 @@
 }   
 
 @media (min-width: 768px){
+
+    /*---------------move nav bar to top of page----------------*/
     #sub-title {
         font-size: var(--medium-header);
     }
@@ -162,5 +161,56 @@
     #events.hidden, #involved.hidden, #contact.hidden {
         bottom: unset;
     }
+    .last {
+        margin-bottom: 0;
+    }
+
+    /*--------------build grid layout-------------*/
+    
+    /*home page*/
+    #exhibitions-home {grid-area: exhibitions-home;}
+    #events-home {grid-area: events-home;}
+    #involved-home {grid-area: involved-home;}
+    #welcome {grid-area: welcome;}
+    #visit-info-home {grid-area: visit-info-home;}
+    #kids {grid-area: kids;}
+    #teachers {grid-area: teachers;}
+    #researchers {grid-area: researchers;}
+    #class-experiment {grid-area: experiment-image;}
+
+    .visit-home{
+        display: unset;
+    }
+    .hours {
+        margin: auto;
+        width: 80%;
+    }
+    .address {
+        border: none;
+        text-align: center;
+    }
+    .address p {
+        padding: 3px;
+        display: inline-block;
+        
+    }
+    td:nth-child(2) {
+        min-width: unset;       /*min width was causing 'visit us' article to be wider than 50vw in grid layout*/
+    }
+
+    main {
+        background-color: white;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas: 
+        'exhibitions-home events-home'
+        'welcome visit-info-home' 
+        'kids kids'
+        'teachers experiment-image'
+        'researchers involved-home';
+
+    }
+
+
 
 }
