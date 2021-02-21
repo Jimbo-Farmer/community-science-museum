@@ -171,7 +171,7 @@
         display: unset;
     }
     .hours {
-        /* width: 80%; */
+        width: 80%;
         margin-right: auto;
     }
     .address {
@@ -198,7 +198,9 @@
     #teachers h2, #welcome h1 {
         padding-left: 5%;
     }
-
+    #visit-info-home {
+        max-width: 50vw;
+    }
     
     /* -------------grid layout---------------------- */
 
