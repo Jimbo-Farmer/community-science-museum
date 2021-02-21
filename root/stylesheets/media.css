@@ -162,13 +162,17 @@
     .featured {
         flex-direction: column;
     }
+    article img {
+        max-width: unset;
+        max-height: unset;
+    }
 
     .visit-home{
         display: unset;
     }
     .hours {
-        margin: auto;
         width: 80%;
+        margin-right: auto;
     }
     .address {
         border: none;
@@ -178,6 +182,16 @@
         padding: 3px;
         display: inline-block;
     }
+
+    #involved-home img {
+        display: none;
+    }
+
+    /* .info-text p {
+        padding: 0 5% 12px 5%;
+    } */
+
+
     
     /* -------------grid layout homepage------------- */
 
@@ -198,10 +212,12 @@
         grid-gap: 5px;
         grid-template-areas: 
         'exhibitions-home events-home'
-        'welcome visit-info-home' 
-        'kids kids'
-        'teachers experiment-image'
-        'researchers involved-home';
+        'welcome welcome' 
+        'kids visit-info-home'
+        'kids researchers'
+        'experiment-image experiment-image'
+        'teachers teachers'
+        'involved-home involved-home';
 
     }
 
