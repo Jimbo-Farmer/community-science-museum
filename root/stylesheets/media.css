@@ -188,6 +188,7 @@
     }
     #kids {
         border-bottom: 4px solid var(--yellow);
+
     }
     #teachers {
         border-top: unset;
@@ -197,6 +198,9 @@
     }
     #teachers h2, #welcome h1 {
         padding-left: 5%;
+    }
+    #kids p, #researchers p {
+        padding-right: 5%;
     }
     
 
@@ -235,16 +239,7 @@
     }
 
     /* -------------grid layout exhibitions------------- */
-    .page-header {grid-area: header;}
-    #ecology {grid-area: ecology;}
-    #cosmology {grid-area: cosmology;}
-    #robotics {grid-area: robotics;}
-    #evolution {grid-area: evolution;}
-    #biology {grid-area: biology;}
-    #events-link {grid-area: events-link;}
-    #reef {grid-area: reef;}
-
-    #ecology .pic {
+    #ecology .pic, #cosmology .pic {
         display: none;
     }
     #reef {
@@ -254,19 +249,43 @@
     #reef img {
         width: 100%;
     }
-    #exhibitions-main .info-text {
+    #exhibitions-main .info-text, #events-main .info-text {
         padding-top: 0;
     }
+
+    .page-header {grid-area: header;}
+    #ecology {grid-area: ecology;}
+    #cosmology {grid-area: cosmology;}
+    #robotics {grid-area: robotics;}
+    #evolution {grid-area: evolution;}
+    #biology {grid-area: biology;}
+    #events-link {grid-area: events-link;}
+    #reef {grid-area: reef;}
+
     #exhibitions-main {
-        
-        /* grid-row-gap: 0; */
         grid-template-areas: 
         'header header'
         'ecology cosmology'
         'reef reef'
         'evolution biology'
-        'robotics events-link'
-    ;
-
+        'robotics events-link';
     }
+
+    /* -------------grid layout events------------- */
+    #night-in-museum .pic {
+        display: none;
+    }
+
+    #visiting-professor {grid-area: visiting-professor;}
+    #night-in-museum {grid-area: night-in-museum;}
+    #energetica {grid-area: energetica;}
+    #get-involved {grid-area: get-involved;}
+
+    #events-main { 
+        grid-template-areas: 
+        'header header'
+        'visiting-professor energetica'
+        'night-in-museum get-involved'
+        ;}
+
 }
