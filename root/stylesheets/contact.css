@@ -84,3 +84,12 @@ td {
     width: 70%;
     max-width: 400px;
 }
+
+h2 {
+    text-align: left;
+    margin-left: 10%;
+}
+#email p{
+    padding: 0 10%;
+
+}

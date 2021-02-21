@@ -348,4 +348,26 @@
         ;
     }
 
+    /* -------------grid layout contact--------------*/
+
+    #intro-contact {grid-area: intro;}
+    #telephone {grid-area: tel;}
+    #email {grid-area: email;}
+    #address {grid-area: address;}
+    #form {grid-area: form;}
+    
+    #contact-main {
+        grid-row-gap: 0;
+        grid-template-areas: 
+        'header header'
+        'intro intro'
+        'tel form'
+        'email form'
+        'address form';
+    }
+
+    #intro-contact p {
+        padding: 0 5% 12px 5%;
+    }
+
 }
