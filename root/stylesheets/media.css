@@ -198,9 +198,11 @@
     #teachers h2, #welcome h1 {
         padding-left: 5%;
     }
-    #visit-info-home {
-        max-width: 50vw;
+    table {
+        width: unset;
+        margin: auto;
     }
+
     
     /* -------------grid layout---------------------- */
 
