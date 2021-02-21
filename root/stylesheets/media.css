@@ -1,12 +1,3 @@
-@media (max-width: 359px){       /*creates a little more space for the table on the homepage on very small screens*/
-    .hours {
-        margin-right: 2px;
-    }
-    .hours td:first-child {
-        min-width: none;
-    }
-}
-
 
 /* Some minor adjustments for smaller tablets, mostly increases in font size  */
 
@@ -165,18 +156,12 @@
         margin-bottom: 0;
     }
 
-    /*--------------build grid layout-------------*/
+    /*--------------make adjustments and build grid layout-------------*/
     
     /*home page*/
-    #exhibitions-home {grid-area: exhibitions-home;}
-    #events-home {grid-area: events-home;}
-    #involved-home {grid-area: involved-home;}
-    #welcome {grid-area: welcome;}
-    #visit-info-home {grid-area: visit-info-home;}
-    #kids {grid-area: kids;}
-    #teachers {grid-area: teachers;}
-    #researchers {grid-area: researchers;}
-    #class-experiment {grid-area: experiment-image;}
+    .featured {
+        flex-direction: column;
+    }
 
     .visit-home{
         display: unset;
@@ -192,11 +177,20 @@
     .address p {
         padding: 3px;
         display: inline-block;
-        
     }
-    td:nth-child(2) {
-        min-width: unset;       /*min width was causing 'visit us' article to be wider than 50vw in grid layout*/
-    }
+    
+    /* -------------grid layout homepage------------- */
+
+    #exhibitions-home {grid-area: exhibitions-home;}
+    #events-home {grid-area: events-home;}
+    #involved-home {grid-area: involved-home;}
+    #welcome {grid-area: welcome;}
+    #visit-info-home {grid-area: visit-info-home;}
+    #kids {grid-area: kids;}
+    #teachers {grid-area: teachers;}
+    #researchers {grid-area: researchers;}
+    #class-experiment {grid-area: experiment-image;}
+
 
     main {
         background-color: white;
