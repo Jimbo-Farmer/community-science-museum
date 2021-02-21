@@ -249,7 +249,7 @@
     #reef img {
         width: 100%;
     }
-    #exhibitions-main .info-text, #events-main .info-text {
+    #exhibitions-main .info-text, #events-main .info-text, #involved-main .info-text {
         padding-top: 0;
     }
 
@@ -285,7 +285,67 @@
         grid-template-areas: 
         'header header'
         'visiting-professor energetica'
-        'night-in-museum get-involved'
-        ;}
+        'night-in-museum get-involved';
+    }
+
+    /* -------------grid layout events--------------*/
+
+    #support {grid-area: support}
+    #volunteer {grid-area: volunteer}
+    #internships {grid-area: internships}
+
+    #involved-main {
+        grid-template-areas: 
+        'header header'
+        'support volunteer'
+        'internships internships';
+    }
+
+    
+    #internships p {grid-area: paragraph;}
+    #internships .pic {grid-area: pic;}
+    #internships h2 {grid-area: title;}
+    #internships {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: grid;
+        grid-template-areas: 
+        'title title'
+        'paragraph pic'
+        ;
+    }
+
+    /* -------------grid layout visit--------------*/
+
+    #general-information {grid-area: general-info;}
+    #accessibility {grid-area: accessibility;}
+    #refreshments {grid-area: refreshments;}
+    #shop {grid-area: shop;}
+    #location {grid-area: location;}
+    #opening-hours {grid-area: opening-hours;}
+    #rocket {grid-area: rocket;}
+
+    #map {
+        height: 400px;
+    }
+    #location .short-border, #opening-hours .short-border {
+        display: none;
+    }
+    #general-information p, #accessibility p, #refreshments p, #shop p {
+        padding-right: 5%;
+    }
+    #visit-main {
+        /* background-color: var(--purple); */
+        grid-row-gap: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: 
+        'header header'
+        'general-info location'
+        'accessibility location'
+        'refreshments opening-hours'
+        'shop opening-hours'
+        'rocket rocket'
+        
+        ;
+    }
 
 }

@@ -187,6 +187,7 @@ article img {
 .pic img {
     max-width: none;
     max-height: none;
+    width: 100%;
 }
 
 .selected  {
