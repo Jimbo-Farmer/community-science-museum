@@ -222,12 +222,12 @@
 
 
     #home-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas: 
         'exhibitions-home events-home'
         'welcome welcome' 
-        'kids kids'
-        'researchers researchers'
-        'visit-info-home visit-info-home'
+        'kids visit-info-home'
+        'kids researchers'
         'experiment-image experiment-image'
         'teachers teachers'
         'involved-home involved-home';
@@ -258,6 +258,7 @@
         padding-top: 0;
     }
     #exhibitions-main {
+        
         /* grid-row-gap: 0; */
         grid-template-areas: 
         'header header'
