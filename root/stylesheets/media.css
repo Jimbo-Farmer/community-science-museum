@@ -84,6 +84,42 @@
 
 }   
 
+
+
+@media (min-width:768px) and (max-width: 1023px){
+    .featured {
+        flex-direction: column;                         /*undone at 1024px*/
+    }
+    .visit-home{
+        display: unset;                                 /*undone at 1024px*/
+    }
+    #involved-home img {                               /*undone at 1024px*/
+        display: none;
+    }
+    #teachers p, #welcome p, #involved-home .right-column { /*undone at 1024px*/
+        padding: 0 5% 12px 5%;
+    }
+    #teachers h2, #welcome h1 {                         /*undone at 1024px*/
+        padding-left: 5%;
+    }
+    #kids p, #researchers p {                           /*undone at 1024px*/
+        padding-right: 5%;
+    }
+    .hours {                                            /*undone at 1024px*/
+        width: 80%;
+        margin-right: auto;
+    }
+    .address {                                           /*undone at 1024px*/
+        border: none;
+        text-align: center;
+    }
+    .address p {                                         /*undone at 1024px*/
+        padding: 3px;
+        display: inline-block;
+    } 
+}
+
+
 @media (min-width: 768px){
 
     /*---------------move nav bar to top of page----------------*/
@@ -92,6 +128,8 @@
     }
     #logo {
         margin: 5px 0 0 20px;
+        position: relative;
+        z-index: 100;
     }
     #logo img {
         width: 93px;
@@ -159,51 +197,21 @@
     /*--------------make adjustments and build grid layout-------------*/
     
     /*home page*/
-    .featured {
-        flex-direction: column;
-    }
     article img {
         max-width: unset;
         max-height: unset;
     }
-
-    .visit-home{
-        display: unset;
-    }
-    .hours {
-        width: 80%;
-        margin-right: auto;
-    }
-    .address {
-        border: none;
-        text-align: center;
-    }
-    .address p {
-        padding: 3px;
-        display: inline-block;
+    .page-header {
+        padding-left: 5%;
     }
 
-    #involved-home img {
-        display: none;
-    }
+      
     #kids {
         border-bottom: 4px solid var(--yellow);
-
     }
     #teachers {
         border-top: unset;
-    }
-    #teachers p, #welcome p, #involved-home .right-column {
-        padding: 0 5% 12px 5%;
-    }
-    #teachers h2, #welcome h1 {
-        padding-left: 5%;
-    }
-    #kids p, #researchers p {
-        padding-right: 5%;
-    }
-    
-
+    } 
     
     /* -------------grid layout---------------------- */
 
@@ -235,7 +243,6 @@
         'experiment-image experiment-image'
         'teachers teachers'
         'involved-home involved-home';
-
     }
 
     /* -------------grid layout exhibitions------------- */
@@ -288,7 +295,7 @@
         'night-in-museum get-involved';
     }
 
-    /* -------------grid layout events--------------*/
+    /* -------------grid layout get involved--------------*/
 
     #support {grid-area: support}
     #volunteer {grid-area: volunteer}
@@ -301,7 +308,6 @@
         'internships internships';
     }
 
-    
     #internships p {grid-area: paragraph;}
     #internships .pic {grid-area: pic;}
     #internships h2 {grid-area: title;}
@@ -343,9 +349,7 @@
         'accessibility location'
         'refreshments opening-hours'
         'shop opening-hours'
-        'rocket rocket'
-        
-        ;
+        'rocket rocket';
     }
 
     /* -------------grid layout contact--------------*/
@@ -357,17 +361,162 @@
     #form {grid-area: form;}
     
     #contact-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-row-gap: 0;
         grid-template-areas: 
         'header header'
-        'intro intro'
+        'intro form'
         'tel form'
         'email form'
         'address form';
     }
+}
 
-    #intro-contact p {
-        padding: 0 5% 12px 5%;
+
+@media (min-width: 1024px){
+    nav {
+        width: 60%;
+        margin-right: 5%;   
     }
+    #logo img {  
+        width: 130px;
+    }
+    #title {
+        font-size: var(--very-large-header);
+    }
+    #sub-title {
+        font-size:var(--large-header);   
+    }
+    .featured {
+        flex-direction: row;
+    }
+    #involved-home img {
+        display: unset;
+    }
+    #home-main {
+        grid-template-areas: 
+        'exhibitions-home events-home'
+        'welcome kids' 
+        'experiment-image experiment-image'
+        'teachers visit-info-home'
+        'involved-home researchers';
+    }
+    .featured {
+        height: 100%;           /*ensures no gap under dinosaur at 1024px*/
+    }
+    #class-experiment {
+        max-height: 600px;
+        overflow: hidden;
+    }
+    #kids, #teachers, #researchers, #visit-info-home, #welcome {
+        padding-top: 5%;
+    }
+    
+    #box {
+        width: 50%;
+    }
+}
+
+/* ------------------------------larger screens------------------------------------ */
+
+@media (min-width: 1400px){
+    nav {
+        width: 50%;
+        margin-right: 5%;
+    }
+    
+    body {
+        background-color: var(--blue);
+    }
+    .page-header h1 {
+        font-size: var(--large-header);
+    }
+    
+    /* ----------------------------home grid adjustments-----------------------------*/
+    #home-main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas: 
+        'exhibitions-home events-home involved-home'
+        'welcome welcome visit-info-home' 
+        'kids experiment-image experiment-image'
+        'teachers  teachers researchers'
+        ;
+    }
+
+    #events-home .featured {
+        flex-direction: row-reverse;
+    }
+    .left-column {
+        text-align: left;
+    }
+    #astronaut {
+        transform: scaleX(-1);              /*       https://css-tricks.com/snippets/css/flip-an-image/         */
+    }
+    #kids h2, #kids p {
+        padding-left: 20%;
+    }
+    #class-experiment {
+        max-height: 650px;
+    }
+    #teachers {
+        padding-top: 2.5%;
+    }
+    #class-experiment {
+        max-height: none;
+        background-color: black;
+    }
+    #experiment {
+        height: 100%;
+        width: unset;
+    }
+
+    /* ----------------------------visit grid adjustments-----------------------------*/
+    #visit-main { 
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas: 
+        'header header header'
+        'general-info location rocket'
+        'accessibility location rocket'
+        'refreshments opening-hours rocket'
+        'shop opening-hours rocket';
+    }
+    #rocket {
+        background-color: black;
+    }
+
+    #blue-rocket {
+        height: 100%;
+        width: unset;
+        overflow: hidden;
+        transform: scaleX(-1);
+        margin-left: 10%;
+    }
+    /* ----------------------------events grid adjustments-----------------------------*/
+
+    #events-main { 
+        grid-template-areas: 
+        'header header header'
+        'visiting-professor energetica night-in-museum'
+        'visiting-professor energetica get-involved';
+    }
+    
+    #night-in-museum .pic {
+        display: unset;
+    }
+    #museum-at-night {
+        height: unset;
+    }
+
+}
+
+
+
+@media (min-width: 1800px){
+    #experiment {
+        height: unset;
+        max-height: 650px;
+        width: 100%;
+    }
+
 
 }
