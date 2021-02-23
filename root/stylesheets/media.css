@@ -415,6 +415,11 @@
     #box {
         width: 50%;
     }
+
+    #intern {                    /*intern image was becoming too large past this point*/
+        width: 80%;
+        margin: auto;
+    }
 }
 
 /* ------------------------------larger screens------------------------------------ */
@@ -507,6 +512,71 @@
         height: unset;
     }
 
+    /* ----------------------------exhibitions grid adjustments-----------------------------*/
+    #exhibitions-main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas: 
+        'header header header'
+        'biology cosmology evolution'
+        'biology robotics evolution'
+        'reef reef ecology'
+        'reef reef events-link'
+        ;
+    }
+    #cosmology .pic {
+        display: unset;
+    }
+    #cosmology .pic img {
+        height: unset;
+    }
+    #reef {
+        overflow: hidden;
+    }
+
+    #reef img{
+        width: unset;
+        height: 100%;    
+    }
+    
+    /* ----------------------------get involved grid adjustments-----------------------------*/
+    #involved-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: 
+        'header header'
+        'support internships'
+        'volunteer internships'
+        ;
+    }
+    
+    #internships {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: grid;
+        grid-template-rows: 41px auto auto;
+        grid-template-areas: 
+        'title title'
+        'pic pic'
+        'paragraph paragraph'
+        ;
+    }
+
+    /* ----------------------------contact grid adjustments-----------------------------*/
+    #contact-main .pic {
+        display: unset;
+        grid-area: pic;
+    }
+
+
+
+    #contact-main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-row-gap: 0;
+        grid-template-areas: 
+        'header header header'
+        'intro form pic'
+        'tel form pic'
+        'email form pic'
+        'address form pic';
+    }
 }
 
 
@@ -517,6 +587,10 @@
         max-height: 650px;
         width: 100%;
     }
+    form {
+        max-width: 450px;
+    }
+
 
 
 }

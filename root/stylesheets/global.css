@@ -236,11 +236,9 @@ table {
     padding: 0;
 }
 
-#reef {
+#reef, #contact-main .pic {
     display: none;
 }
-
-
 
 body {                        /*--for ultra-wide monitors--*/
     max-width: 1920px;
