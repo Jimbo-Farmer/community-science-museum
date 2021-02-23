@@ -149,10 +149,17 @@
         font-size: 0;
     }
 
-    nav a {
+    nav a, #events, #involved, #contact {
+        padding: 4px;
+        border-radius: 4px;
         font-size: var(--large-text);
     }
-
+    
+    nav a:hover {
+        color: white;
+        background-color: var(--purple);
+    }
+    
     nav:after {
         content: '';
         display: inline-block;
@@ -176,7 +183,7 @@
     }
     #events {
         bottom: unset;
-        width: 12%;
+        width: unset;
     }
     #involved {
         bottom: unset;
