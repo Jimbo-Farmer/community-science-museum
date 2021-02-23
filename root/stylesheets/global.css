@@ -60,7 +60,6 @@ nav {
     border-top: 2px solid var(--yellow);
     width: 100%;
     padding: 8px 0;
-    z-index: 1000;
 }
 
 
@@ -97,6 +96,7 @@ nav {
     padding: 8px;
     border: 1px solid black;
     margin: 0;
+    z-index: 500;
 }
 #contact {
     bottom: 45px;
@@ -113,8 +113,11 @@ nav {
 }
 
 #events.hidden, #involved.hidden, #contact.hidden {
-    bottom: -150px;
-    z-index: 500;
+    bottom: 45px;
+    height: 0px;
+    padding: 0;
+    font-size: 0;
+    border: unset;
 }
 
 .down {
