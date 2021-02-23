@@ -81,6 +81,9 @@
     #events {
         bottom: 124px;
     }
+    #contact-main h1 {
+        margin-left: 0;
+    }
 
 }   
 
@@ -211,7 +214,6 @@
     .page-header {
         padding-left: 5%;
     }
-
       
     #kids {
         border-bottom: 4px solid var(--yellow);
@@ -219,6 +221,9 @@
     #teachers {
         border-top: unset;
     } 
+    #visit-link{
+        display: inline-block;
+    }
     
     /* -------------grid layout---------------------- */
 
@@ -494,12 +499,12 @@
     }
     #rocket {
         background-color: black;
+        overflow: hidden;
     }
 
     #blue-rocket {
         height: 100%;
         width: unset;
-        overflow: hidden;
         transform: scaleX(-1);
         margin-left: 10%;
     }
@@ -573,6 +578,8 @@
     #contact-main .pic {
         display: unset;
         grid-area: pic;
+        width: 100%;
+        background-color: black;
     }
 
 
