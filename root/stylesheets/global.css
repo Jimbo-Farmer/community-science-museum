@@ -22,6 +22,11 @@ header {
     margin-right: -20px;
 }
 
+#logo img{
+    width: 82px;
+    padding: 5px;
+}
+
 #title {
     font-family: 'Share Tech', sans-serif;
     font-size: var(--medium-header);

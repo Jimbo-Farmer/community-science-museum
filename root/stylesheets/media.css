@@ -289,7 +289,7 @@
     #night-in-museum .pic {
         display: none;
     }
-
+    
     #visiting-professor {grid-area: visiting-professor;}
     #night-in-museum {grid-area: night-in-museum;}
     #energetica {grid-area: energetica;}
@@ -513,10 +513,13 @@
     }
     
     #night-in-museum .pic {
-        display: unset;
+        display: inherit;
     }
     #museum-at-night {
         height: unset;
+    }
+    #visiting-professor img, #museum-at-night, #energetica img {
+        width: 80%;
     }
 
     /* ----------------------------exhibitions grid adjustments-----------------------------*/
