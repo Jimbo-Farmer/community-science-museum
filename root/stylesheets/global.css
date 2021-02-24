@@ -258,4 +258,10 @@ body {                        /*--for ultra-wide monitors--*/
     margin: auto;
 }
 
-
+.featured a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    background-color: var(--purple);
+    border-radius: 10px;
+}
