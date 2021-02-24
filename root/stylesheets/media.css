@@ -13,6 +13,10 @@
     .featured .image {
         flex: 1.2;
     }
+    .featured a {
+        display: inline-block;
+        margin-top: 12px;
+    }
     .left-column.image, .right-column.image {
         max-width: 70vw;
     }
