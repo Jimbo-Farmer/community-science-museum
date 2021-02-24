@@ -152,10 +152,12 @@
         font-size: 0;
     }
 
-    nav a, #events, #involved, #contact {
+    nav a, #events.hidden, #involved.hidden, #contact.hidden {
         padding: 4px;
         border-radius: 4px;
         font-size: var(--large-text);
+        transition: all 0s;
+        height: unset;
     }
     
     nav a:hover {
@@ -166,8 +168,7 @@
     nav:after {
         content: '';
         display: inline-block;
-        width: 100%;
-        
+        width: 100%;   
     }
     
     .expandable {
@@ -178,26 +179,15 @@
         background-color: unset;
         padding: 0;
         border: 0;
-        margin: 0;
     }
+
     .permanent {
-        display: inline-block;
         width: unset;
-    }
-    #events {
-        bottom: unset;
-        width: unset;
-    }
-    #involved {
-        bottom: unset;
-    }
-    #contact {
-        bottom: unset;
     }
     .expand {
         display: none;
     }
-    #events.hidden, #involved.hidden, #contact.hidden {
+    #events.hidden, #involved.hidden, #contact.hidden, #events, #involved, #contact {
         bottom: unset;
     }
     .last {

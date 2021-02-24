@@ -96,20 +96,19 @@ nav {
     padding: 8px;
     border: 1px solid black;
     margin: 0;
-    z-index: 500;
 }
 #contact {
     bottom: 45px;
-    transition: all 0.1s;
+    transition: all 0.15s;
 }
 
 #involved {
     bottom: 81px;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 #events {
     bottom: 117px;
-    transition: all 0.3s;
+    transition: all 0.45s;
 }
 
 #events.hidden, #involved.hidden, #contact.hidden {
