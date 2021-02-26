@@ -62,7 +62,6 @@ nav {
     padding: 8px 0;
 }
 
-
 .permanent {
     display: inline-block;
     width: 30%;
@@ -97,6 +96,7 @@ nav {
     border: 1px solid black;
     margin: 0;
 }
+
 #contact {
     bottom: 45px;
     transition: all 0.15s;
@@ -120,7 +120,6 @@ nav {
 }
 
 .down {
-    /* rotate: 180deg; */
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);  /*needed to do this otherwise didn't work on my iphone*/
 }
@@ -262,4 +261,20 @@ body {                        /*--for ultra-wide monitors--*/
     padding: 4px;
     background-color: var(--purple);
     border-radius: 10px;
+}
+
+#exhibitions-main h2, #events-main h2, #involved-main h2 {
+        background-color: var(--yellow);
+        color: black; 
+        margin: 0;
+        padding: 12px 0 4px 0;
+}
+
+#map {
+    width: 100%;
+    max-width: 500px;
+}
+
+#location {
+    text-align: center;
 }

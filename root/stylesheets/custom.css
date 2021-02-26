@@ -11,10 +11,6 @@
     --small-text: 0.75rem;  
   }
 
-@font-face {
-  font-family: "Jura";
-  src: url("../fonts/Jura-VariableFont_wght.ttf") format("truetype");
-}
 
 @font-face {
   font-family: "Roboto Condensed";

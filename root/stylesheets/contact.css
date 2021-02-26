@@ -57,7 +57,7 @@ input, textarea {
 
 #overlay:target {
     opacity: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(38, 205, 240, 0.6);
     visibility: visible;
     transition: all 0.3s;
 }

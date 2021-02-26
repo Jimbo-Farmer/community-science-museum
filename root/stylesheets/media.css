@@ -126,7 +126,7 @@
     } 
 }
 
-
+/* -----768----------768----------768----------768----------768----------768----------768----------768----------768----------768----- */
 @media (min-width: 768px){
 
     /*---------------move nav bar to top of page----------------*/
@@ -346,7 +346,6 @@
         padding-right: 5%;
     }
     #visit-main {
-        /* background-color: var(--purple); */
         grid-row-gap: 0;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas: 
@@ -378,7 +377,7 @@
     }
 }
 
-
+/* -----1024----------1024----------1024----------1024----------1024----------1024----------1024----------1024----------1024----- */
 @media (min-width: 1024px){
     nav {
         width: 60%;
@@ -428,7 +427,7 @@
     }
 }
 
-/* ------------------------------larger screens------------------------------------ */
+/* -----1400----------1400----------1400----------1400----------1400----------1400----------1400----------1400----------1400----- */
 
 @media (min-width: 1400px){
     nav {
@@ -450,8 +449,7 @@
         'exhibitions-home events-home involved-home'
         'welcome welcome visit-info-home' 
         'kids experiment-image experiment-image'
-        'teachers  teachers researchers'
-        ;
+        'teachers  teachers researchers';
     }
 
     #events-home .featured {
@@ -529,8 +527,7 @@
         'biology cosmology evolution'
         'biology robotics evolution'
         'reef reef ecology'
-        'reef reef events-link'
-        ;
+        'reef reef events-link';
     }
     #cosmology .pic {
         display: unset;
@@ -553,8 +550,7 @@
         grid-template-areas: 
         'header header'
         'support internships'
-        'volunteer internships'
-        ;
+        'volunteer internships';
     }
     
     #internships {
@@ -564,8 +560,7 @@
         grid-template-areas: 
         'title title'
         'pic pic'
-        'paragraph paragraph'
-        ;
+        'paragraph paragraph';
     }
 
     /* ----------------------------contact grid adjustments-----------------------------*/
@@ -575,8 +570,6 @@
         width: 100%;
         background-color: black;
     }
-
-
 
     #contact-main {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -590,8 +583,7 @@
     }
 }
 
-
-
+/* -----1800----------1800----------1800----------1800----------1800----------1800----------1800----------1800----------1800----- */
 @media (min-width: 1800px){
     #experiment {
         height: unset;
@@ -601,7 +593,4 @@
     form {
         max-width: 450px;
     }
-
-
-
 }
