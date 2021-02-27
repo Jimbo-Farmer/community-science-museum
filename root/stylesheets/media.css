@@ -451,7 +451,6 @@
         'kids experiment-image experiment-image'
         'teachers  teachers researchers';
     }
-
     #events-home .featured {
         flex-direction: row-reverse;
     }
@@ -459,7 +458,7 @@
         text-align: left;
     }
     #astronaut {
-        transform: scaleX(-1);              /*       https://css-tricks.com/snippets/css/flip-an-image/         */
+        transform: scaleX(-1);             
     }
     #kids h2, #kids p {
         padding-left: 20%;
@@ -493,7 +492,6 @@
         background-color: black;
         overflow: hidden;
     }
-
     #blue-rocket {
         height: 100%;
         width: unset;
@@ -508,7 +506,6 @@
         'visiting-professor energetica night-in-museum'
         'visiting-professor energetica get-involved';
     }
-    
     #night-in-museum .pic {
         display: inherit;
     }
@@ -538,7 +535,6 @@
     #reef {
         overflow: hidden;
     }
-
     #reef img{
         width: unset;
         height: 100%;    
