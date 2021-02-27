@@ -67,15 +67,12 @@
     #visit-info-home {
         padding: 8px 10%;
     }
-    
     .hours {
         padding: 0 8px;
     }
-
     td {
         padding: 3px 0;
     }
-    
     #contact {
         bottom: 46px;
     }
@@ -88,9 +85,7 @@
     #contact-main h1 {
         margin-left: 0;
     }
-
 }   
-
 
 
 @media (min-width:768px) and (max-width: 1023px){
@@ -144,7 +139,6 @@
     #sub-title {
         display: block;
     }
-
     nav {
         position: relative;
         border: 0;
@@ -155,7 +149,6 @@
         margin: 0 auto;  
         font-size: 0;
     }
-
     nav a, #events.hidden, #involved.hidden, #contact.hidden {
         padding: 4px;
         border-radius: 4px;
@@ -163,18 +156,15 @@
         transition: all 0s;
         height: unset;
     }
-    
     nav a:hover {
         color: white;
         background-color: var(--purple);
     }
-    
     nav:after {
         content: '';
         display: inline-block;
         width: 100%;   
     }
-    
     .expandable {
         position: relative;
         display: inline-block;
@@ -184,7 +174,6 @@
         padding: 0;
         border: 0;
     }
-
     .permanent {
         width: unset;
     }
@@ -208,7 +197,6 @@
     .page-header {
         padding-left: 5%;
     }
-      
     #kids {
         border-bottom: 4px solid var(--yellow);
     }
@@ -237,7 +225,6 @@
     #teachers {grid-area: teachers;}
     #researchers {grid-area: researchers;}
     #class-experiment {grid-area: experiment-image;}
-
 
     #home-main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -328,14 +315,6 @@
 
     /* -------------grid layout visit--------------*/
 
-    #general-information {grid-area: general-info;}
-    #accessibility {grid-area: accessibility;}
-    #refreshments {grid-area: refreshments;}
-    #shop {grid-area: shop;}
-    #location {grid-area: location;}
-    #opening-hours {grid-area: opening-hours;}
-    #rocket {grid-area: rocket;}
-
     #map {
         height: 400px;
     }
@@ -345,6 +324,15 @@
     #general-information p, #accessibility p, #refreshments p, #shop p {
         padding-right: 5%;
     }
+    
+    #general-information {grid-area: general-info;}
+    #accessibility {grid-area: accessibility;}
+    #refreshments {grid-area: refreshments;}
+    #shop {grid-area: shop;}
+    #location {grid-area: location;}
+    #opening-hours {grid-area: opening-hours;}
+    #rocket {grid-area: rocket;}
+    
     #visit-main {
         grid-row-gap: 0;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -416,11 +404,9 @@
     #kids, #teachers, #researchers, #visit-info-home, #welcome {
         padding-top: 5%;
     }
-    
     #box {
         width: 50%;
     }
-
     #intern {                    /*intern image was becoming too large past this point*/
         width: 80%;
         margin: auto;
@@ -434,7 +420,6 @@
         width: 50%;
         margin-right: 5%;
     }
-    
     body {
         background-color: var(--blue);
     }
