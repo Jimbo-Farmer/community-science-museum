@@ -2,7 +2,7 @@
 /* Some minor adjustments for smaller tablets, mostly increases in font size  */
 
 @media (min-width: 500px){
-    article img {
+    section img {
         max-width: 420px;
         max-height: 380px;
     } 
@@ -200,7 +200,7 @@
     /*--------------make adjustments and build grid layout-------------*/
     
     /*home page*/
-    article img {
+    section img {
         max-width: unset;
         max-height: unset;
     }

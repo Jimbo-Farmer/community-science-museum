@@ -23,7 +23,7 @@
     font-size: 0;           /* fix to remove whitespace that appeared below image.  */
 }
 
-article {
+section {
     border-bottom: 4px solid var(--yellow);
 }
 
