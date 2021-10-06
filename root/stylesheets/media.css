@@ -124,6 +124,16 @@
 /* -----768----------768----------768----------768----------768----------768----------768----------768----------768----------768----- */
 @media (min-width: 768px){
 
+    h1{
+        font-size: var(--large-header);
+    }
+    #welcome p:first-of-type {
+        margin-top: 0.7em;
+    }
+    h2{
+        font-size: var(--medium-header);
+    }
+
     /*---------------move nav bar to top of page----------------*/
     #sub-title {
         font-size: var(--medium-header);
@@ -158,7 +168,7 @@
     }
     nav a:hover {
         color: white;
-        background-color: var(--purple);
+        background-color: var(--darkgrey);
     }
     nav:after {
         content: '';
@@ -212,7 +222,8 @@
     main {
         background-color: white;
         display: grid;
-        grid-gap: 5px;
+        grid-gap: 18px;
+        
     }
 
     /* -------------grid layout homepage------------- */
@@ -331,10 +342,12 @@
     #shop {grid-area: shop;}
     #location {grid-area: location;}
     #opening-hours {grid-area: opening-hours;}
-    #rocket {grid-area: rocket;}
+    #rocket {grid-area: rocket;
+    row-gap: 24px}
     
     #visit-main {
-        grid-row-gap: 0;
+        row-gap: 0;
+        column-gap: 6px;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas: 
         'header header'
@@ -343,6 +356,10 @@
         'refreshments opening-hours'
         'shop opening-hours'
         'rocket rocket';
+    }
+
+    #rocket, #opening-hours {
+        margin-top: 24px;
     }
 
     /* -------------grid layout contact--------------*/
@@ -355,7 +372,8 @@
     
     #contact-main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-row-gap: 0;
+        row-gap: 0;
+        column-gap: 6px;
         grid-template-areas: 
         'header header'
         'intro form'
@@ -374,6 +392,8 @@
     #logo img {  
         width: 130px;
     }
+    
+
     #title {
         font-size: var(--very-large-header);
     }
@@ -388,8 +408,8 @@
     }
     #home-main {
         grid-template-areas: 
-        'exhibitions-home events-home'
-        'welcome kids' 
+        'welcome exhibitions-home'
+        'kids events-home' 
         'experiment-image experiment-image'
         'teachers visit-info-home'
         'involved-home researchers';
@@ -413,22 +433,36 @@
     }
 }
 
-/* -----1400----------1400----------1400----------1400----------1400----------1400----------1400----------1400----------1400----- */
+/* -----1550----------1550----------1550----------1550----------1550----------1550----------1550----------1550----------1550----- */
 
-@media (min-width: 1400px){
+@media (min-width: 1550px){
     nav {
         width: 50%;
         margin-right: 5%;
     }
-    body {
-        background-color: var(--blue);
-    }
+    
     .page-header h1 {
         font-size: var(--large-header);
     }
-    
+
+    header {
+        width: unset;
+        padding: 0 10%;
+    }
+
+    main {
+        margin: 0 10%;
+        border-left: 18px solid white;
+        border-right: 18px solid white;   
+    }
+
+    body {
+        background-color: var(--darkgrey);
+    }
+
+
     /* ----------------------------home grid adjustments-----------------------------*/
-    #home-main {
+    /* #home-main {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-areas: 
         'exhibitions-home events-home involved-home'
@@ -461,10 +495,10 @@
     #experiment {
         height: 100%;
         width: unset;
-    }
+    } */
 
     /* ----------------------------visit grid adjustments-----------------------------*/
-    #visit-main { 
+    /* #visit-main { 
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-areas: 
         'header header header'
@@ -482,10 +516,10 @@
         width: unset;
         transform: scaleX(-1);
         margin-left: 10%;
-    }
+    } */
     /* ----------------------------events grid adjustments-----------------------------*/
 
-    #events-main { 
+    /* #events-main { 
         grid-template-areas: 
         'header header header'
         'visiting-professor energetica night-in-museum'
@@ -499,10 +533,10 @@
     }
     #visiting-professor img, #museum-at-night, #energetica img {
         width: 80%;
-    }
+    } */
 
     /* ----------------------------exhibitions grid adjustments-----------------------------*/
-    #exhibitions-main {
+    /* #exhibitions-main {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-areas: 
         'header header header'
@@ -523,10 +557,10 @@
     #reef img{
         width: unset;
         height: 100%;    
-    }
+    } */
     
     /* ----------------------------get involved grid adjustments-----------------------------*/
-    #involved-main {
+    /* #involved-main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas: 
         'header header'
@@ -542,10 +576,10 @@
         'title title'
         'pic pic'
         'paragraph paragraph';
-    }
+    } */
 
     /* ----------------------------contact grid adjustments-----------------------------*/
-    #contact-main .pic {
+    /* #contact-main .pic {
         display: unset;
         grid-area: pic;
         width: 100%;
@@ -561,14 +595,13 @@
         'tel form pic'
         'email form pic'
         'address form pic';
-    }
+    } */
 }
 
 /* -----1800----------1800----------1800----------1800----------1800----------1800----------1800----------1800----------1800----- */
 @media (min-width: 1800px){
     #experiment {
         height: unset;
-        max-height: 650px;
         width: 100%;
     }
     form {

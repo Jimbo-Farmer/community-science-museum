@@ -13,7 +13,7 @@
 <body>
     <header>
         <a href="index.html" id="logo"><img src="icons/logo.svg" alt="Spiral-esque community science museum logo"></a>
-        <p id="title">community science museum</p>
+        <a href="index.html"><p id="title">community science museum</p></a>
         <p id="sub-title">explore together</p>
         <nav>
             <a class="permanent narrow" href="visit.html">visit</a>
@@ -47,7 +47,7 @@
             </table>
             <div class="short-border"></div>
         </article>
-        <article class="info-text" id="email">
+        <article class="info-text" id="email-info">
             <h2>Email</h2>
             <p>enquiries@csm.com</p>
             <p>collections@csm.com</p>
@@ -62,14 +62,18 @@
             <h2>contact form</h2>
             <form action="#overlay">
                 <label for="name">Name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="name">
+                <div class="form-error invisible" id="name-error">- Please enter your name</div>
                 <label for="email">Email</label>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
+                <div class="form-error invisible" id="email-error">- Please enter a valid email</div>
                 <label for="subject">Subject</label>
-                <input type="text" name="subject">
-                <label for="message">Message</label>
-                <textarea name="message" id="" cols="35" rows="10"></textarea>
-                <input class="cta" type="submit" value="send">
+                <input type="text" name="subject" id="subject">
+                <div class="form-error invisible" id="subject-error">- Please enter a subject</div>
+                <label for="message">Message - minimum 20 characters</label>
+                <textarea name="message" id="message" cols="35" rows="8"></textarea>
+                <div class="form-error invisible" id="message-error">- Minimum 20 characters</div>
+                <input class="cta" type="submit" value="send" id="submit">
             </form>
         </article>
         <article id="overlay">
@@ -84,5 +88,6 @@
         </div>
     </main>
     <script src="javascript/logic.js"></script>
+    <script src="javascript/contact.js"></script>
 </body>
 </html>

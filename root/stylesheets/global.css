@@ -130,7 +130,7 @@ main {
 }
 
 article {
-    background-color: black;     
+    background-color: var(--darkgrey);     
 }
 
 h2, h1 {
@@ -164,7 +164,7 @@ p span {
 }
 
 .page-header {
-    background-color: black;
+    background-color: var(--darkgrey);
     padding: 4px 5%; 
 }
 
@@ -257,10 +257,13 @@ body {                        /*--for ultra-wide monitors--*/
 
 .featured a {
     color: white;
-    text-decoration: none;
     padding: 4px;
-    background-color: var(--purple);
-    border-radius: 10px;
+    border-radius: 4px;
+}
+
+.featured a:hover, .featured a:focus {
+    color: black;
+    background-color: white;
 }
 
 #exhibitions-main h2, #events-main h2, #involved-main h2 {

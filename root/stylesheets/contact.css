@@ -13,13 +13,23 @@ input, textarea {
 .cta {
     width: auto;
     margin: 16px auto 0 auto;
-    background: linear-gradient(0deg, rgba(73,0,115,1) 0%, rgba(148,90,79,1) 70%, rgba(255,218,29,1) 100%);
-    color: white;
-    border: 2px solid white;
+    background-color: var(--yellow);
+    color: black;
     text-transform: uppercase;
-    font-weight: bold;
     padding: 4px 16px;
     font-size: 1em;
+    border: 1px solid white;
+    -webkit-appearance: none;
+    -moz-webkit-appearance: none;
+}
+
+.cta:hover:disabled {
+    background-color: var(--yellow);
+}
+
+.cta:hover, .cta:focus {
+    cursor: pointer;
+    background-color: var(--blue);
 }
 
 #box a {
@@ -90,7 +100,7 @@ h2 {
     text-align: left;
     margin-left: 10%;
 }
-#email p{
+#email-info p{
     padding: 0 10%;
 
 }
@@ -100,4 +110,12 @@ h2 {
 
 #intro-contact p {
     padding: 0 10%;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.form-error {
+    color: var(--yellow);
 }
